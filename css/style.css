@@ -320,6 +320,10 @@ footer {
     padding-left: 4rem;
 }
 
+.welcome-buttons {
+    padding-left: 10rem;
+}
+
 @media (min-width: 800px) {
     main {
         display: grid;
@@ -336,6 +340,7 @@ footer {
     .textures li {
         height: 15vw;
     }
+
 }
 
 @media (min-width: 900px) {

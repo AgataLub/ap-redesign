@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="english">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<html lang="">
->>>>>>> folder structure
-=======
 
->>>>>>> lol
-=======
-
->>>>>>> ap-redesign/agata
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,152 +30,88 @@
 
     <div id="loading">
         <div class="grey_bar"></div>
-        <div class="orange_bar"></div>
+        <div class="orange_bar transform20"></div>
+    </div>
+
+    <div class="display_none">
+        <div id="templateID">
+            <h1></h1>
+            <p></p>
+            <div class="image"><img class="illustration" src=""></div>
+            <div class="number"><span class="number_span"></span></div>
+            <div class="questions">
+                <h1 id="specificQuestion"></h1>
+                <table class="table display_none">
+                    <tr>
+                        <td><button class="secondary-button" id="answer1"></button></td>
+                        <td><button class="secondary-button" id="answer2"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="secondary-button" id="answer3"></button></td>
+                        <td><button class="secondary-button" id="answer4"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="secondary-button" id="answer5"></button></td>
+                    </tr>
+
+                </table>
+                <div class="slidecontainer display_none">
+                    <input type="range" min="50" value="50" max="80" class="slider" id="myRange">
+                    <p>I would like to retire at <span id="demo"></span> years young.</p>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <div class="quiz" id="one">
-
-        <h1>Let's start...</h1>
-
-        <p>To create the best personal plan for you, we first need some important information about you. This will only take a few minutes. The more specific you fill out this form, the more suitable plan we will have for you.
-        </p>
-
-        <div class="image"><img src="css/img/people.svg"></div>
-        <div class="number"><span class="number_span">1</span></div>
-        <div class="questions">
-            <h1>What is your marital status?</h1>
-            <table>
-                <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
-                </tr>
-
-            </table>
-        </div>
+        <div id="template_place1"></div>
         <div class="buttons">
-            <button class="back">Back</button>
-            <button class="next">Next</button>
+            <button class="next" id="next1">Next</button>
         </div>
     </div>
     <div class="quiz" id="two">
-
-
-        <h1>Please tell us more</h1>
-
-        <p>To create the best personal plan for you, we first need some important information about you. This will only take a few minutes. The more specific you fill out this form, the more suitable plan we will have for you.
-        </p>
-
-        <div class="image"></div>
-
-        <div class="number"><span class="number_span">2</span></div>
-
-        <div class="questions">
-
-            <h1>Do you have kids?</h1>
-            <table>
-                <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
-                </tr>
-
-            </table>
-        </div>
+        <div id="template_place2"></div>
         <div class="buttons">
-            <button class="back">Back</button>
-            <button class="next">Next</button>
+            <button class="back" id="back2">Back</button>
+            <button class="next" id="next2">Next</button>
         </div>
     </div>
     <div class="quiz" id="three">
-
-
-        <h1>We need a little more</h1>
-
-        <p>To create the best personal plan for you, we first need some important information about you. This will only take a few minutes. The more specific you fill out this form, the more suitable plan we will have for you.
-        </p>
-
-        <div class="image"></div>
-
-        <div class="number"><span class="number_span">3</span></div>
-
-        <div class="questions">
-            <h1>Do you own any of the following?</h1>
-            <table>
-                <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
-                </tr>
-                <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
-                </tr>
-
-            </table>
-        </div>
+        <div id="template_place3"></div>
         <div class="buttons">
-            <button class="back">Back</button>
-            <button class="next">Next</button>
+            <button class="back" id="back3">Back</button>
+            <button class="next" id="next3">Next</button>
         </div>
     </div>
     <div class="quiz" id="four">
-
-
-        <h1>Ok just a little more.. </h1>
-
-        <p>To create the best personal plan for you, we first need some important information about you. This will only take a few minutes. The more specific you fill out this form, the more suitable plan we will have for you.
-        </p>
-
-        <div class="image"></div>
-        <div class="number"><span class="number_span">4</span></div>
-        <div class="questions">
-            <h1>At what age would you like to enter your pension time?</h1>
-            <div class="slider"></div>
-        </div>
+        <div id="template_place4"></div>
         <div class="buttons">
-            <button class="back">Back</button>
-            <button class="next">Next</button>
+            <button class="back" id="back4">Back</button>
+            <button class="next" id="next4">Next</button>
         </div>
     </div>
     <div class="solution" id="five">
         <h1>Thank you!</h1>
-        <h2>We recommend one of these plans</h2>
-
+        <h2>We recommend one of these plans:</h2>
+        <div class="image"><img src="http://agataswistak.com/wordpress/wp-content/uploads/2020/11/plan-recommendation.png"></div>
         <div class="plan" id="left">
-            <h2>Pension plan 1</h2>
+            <h2>Lifetime Pension</h2>
             <ul class="plans">
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
+                <li>Secure your finances as long as you live with fixed payment every month</li>
+                <li>If you pay through your employer, you can pay in as much as you want </li>
+                <li>You have full tax deduction for payments in your personal income</li>
             </ul>
             <button class="blue">I want this!</button>
         </div>
 
         <div class="plan" id="right">
-            <h2>Pension plan 1</h2>
+            <h2>Rate pension</h2>
             <ul class="plans">
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
+                <li>Fixed amount per month for 10 to 30 years</li>
+                <li>Installment pension is always payed out</li>
+                <li>Deduction payments in personal income</li>
+                <li>Return is only taxed at 15.3% annually </li>
             </ul>
             <button class="blue">I want this!</button>
         </div>
@@ -193,22 +119,5 @@
             <a href="">I still have some questions...</a>
         </div>
     </div>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Here we will have a webpage.
-<<<<<<< HEAD
-    <script src="script.js"></script>
->>>>>>> folder structure
-</body>
-</html>
-=======
-=======
->>>>>>> merge css
     <script src="js/quizscript.js"></script>
 </body></html>
->>>>>>> lol
-=======
-    <script src="js/quizscript.js"></script>
-</body></html>
->>>>>>> ap-redesign/agata

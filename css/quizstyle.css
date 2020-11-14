@@ -1,41 +1,111 @@
-#templateID,
-#templateID_slider {
-    position: relative;
-    top: 5vh;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "h1 h1 h1"
-        "p number questions"
-        "image image questions"
-        "image image .";
+/*Media Queries*/
+
+@media only screen and (max-width: 800px) {
+
+    #templateID,
+    #templateID_slider {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50px 1fr;
+        grid-template-areas:
+            ". h1"
+            "number questions";
+    }
+
+    h1 {
+        padding-top: 4vh;
+    }
+
+    .illustration,
+    .blurb, .image {
+        display: none;
+    }
+
+    table {
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    th,
+    td {
+        border: 1px solid #999;
+        position: relative;
+        float: left;
+        clear: both;
+        width: 100%;
+        text-align: left;
+    }
+
+    button {
+        width:100%;
+    }
+
+
+    .solution {
+        position: relative;
+        top: 2vh;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        text-align: center;
+        grid-template-areas:
+            "h1"
+            "h2"
+            "left"
+            "right"
+            "learnmore"
+    }
+
+    #left, #right {
+        max-width: 100%;
+    }
+
+}
+
+/*Grids*/
+@media only screen and (min-width: 801px) {
+
+    #templateID,
+    #templateID_slider {
+        position: relative;
+        top: 5vh;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "h1 h1 h1"
+            "p number questions"
+            "image image questions"
+            "image image .";
+    }
+
+    .solution {
+        position: relative;
+        top: 5vh;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        grid-template-areas:
+            ". h1 h1"
+            ". h2 h2"
+            "image left right"
+            "image . learnmore"
+    }
 }
 
 .quiz {
-    position:relative;
-}
-
-.solution {
     position: relative;
-    top: 5vh;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: auto;
-    text-align: center;
-    grid-template-areas:
-        ". h1 h1"
-        ". h2 h2"
-        "image left right"
-        "image . learnmore"
 }
-
 
 /*Grid Areas*/
 
@@ -64,12 +134,12 @@ p {
 
 #right {
     grid-area: right;
-    max-width: 30vw;
+    margin: 15px;
 }
 
 #left {
     grid-area: left;
-    max-width: 30vw;
+    margin: 15px;
 }
 
 .learnmore {
@@ -83,9 +153,9 @@ p {
     border-radius: 17px;
     padding: 1rem;
     text-align: center;
-    position:relative;
+    position: relative;
     display: flex;
-    flex-flow:column;
+    flex-flow: column;
     justify-content: space-between;
 }
 
@@ -95,7 +165,7 @@ p {
 }
 
 .blue {
-margin:0;
+    margin: 0;
 }
 
 
@@ -235,3 +305,5 @@ margin:0;
     border-radius: 50%;
     cursor: pointer;
 }
+
+

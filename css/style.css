@@ -1,8 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/*Navigation and Header*/
+/*navigation media query*/
 
-#topright {
+@media only screen and (max-width: 800px) {
+
+    #navlogo, #navlogo2 {
+        margin-left: 20%;
+        margin-right: 20%;
+        display:flex;
+    }
+
+.menu, .icons, #navlogo {
+  display: none;
+}
+
+#burgermenu {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/*    trying things out*/
+  /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+    background-color:white;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav .menu {
+  display: none;
+}
+
+/* Style navigation menu links */
+#burgerlogo {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+#burgerlogo {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+#burgerlogo:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
+
+/*    end of trying things out*/
+
+
+}
+
+@media only screen and (min-width: 801px) {
+
+    #topright {
     display: flex;
 justify-content: flex-end;
 }
@@ -40,6 +109,11 @@ nav > ul > li {
 #navlogo {
     flex: 1;
 }
+}
+
+
+
+/*Navigation and Header*/
 
 /*CSS from Julia*/
 

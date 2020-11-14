@@ -6,18 +6,20 @@
     #templateID_slider {
         display: grid;
         justify-content: center;
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            ". h1"
-            "number questions";
+            "h1"
+            "questions";
     }
 
     h1 {
         padding-top: 4vh;
     }
 
+    .number,
     .illustration,
-    .blurb, .image {
+    .blurb,
+    .image {
         display: none;
     }
 
@@ -37,7 +39,7 @@
     }
 
     button {
-        width:100%;
+        width: 100%;
     }
 
 
@@ -59,7 +61,8 @@
             "learnmore"
     }
 
-    #left, #right {
+    #left,
+    #right {
         max-width: 100%;
     }
 
@@ -305,5 +308,3 @@ p {
     border-radius: 50%;
     cursor: pointer;
 }
-
-

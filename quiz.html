@@ -26,7 +26,26 @@
         </ul>
 
         <img id="navlogo" src="css/img/logo.svg">
+
+        <!--        trying things out-->
+        <div class="topnav">
+            <a href="#home" class="active"><img id="navlogo2" src="css/img/logo.svg"></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <img id="burgerlogo" src="css/img/user_icon.svg" onclick="burgerMenu()">
+             <!-- Navigation links (hidden by default) -->
+            <div class="menu2">
+            <ul>
+                <li><a href="">Pension</a></li>
+                <li><a href="">Members</a></li>
+                <li><a href="">About AP</a></li>
+            </ul>
+                </div>
+        </div>
+        <!--        end of trying things out-->
+
     </nav>
+
+
 
     <div id="loading">
         <div class="grey_bar"></div>
@@ -36,7 +55,7 @@
     <div class="display_none">
         <div id="templateID">
             <h1></h1>
-            <p></p>
+            <p class="blurb"></p>
             <div class="image"><img class="illustration" src=""></div>
             <div class="number"><span class="number_span"></span></div>
             <div class="questions">
@@ -56,7 +75,7 @@
 
                 </table>
                 <div class="slidecontainer display_none">
-                    <input type="range" min="50" value="50" max="80" class="slider" id="myRange">
+                    <input type="range" min="50" value="50" max="80" class="slider" id="myRange" oninput="changeValue(this.value)">
                     <p>I would like to retire at <span id="demo"></span> years young.</p>
                 </div>
 
@@ -120,4 +139,7 @@
         </div>
     </div>
     <script src="js/quizscript.js"></script>
-</body></html>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

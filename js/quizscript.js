@@ -3,6 +3,8 @@ window.addEventListener("load", loadQuiz);
 function loadQuiz() {
     console.log("loadQuiz");
 
+    document.querySelector("#burgerlogo").addEventListener("onclick", burgerMenu);
+
     document.querySelector("#next1").addEventListener("click", questionOne);
     document.querySelector("#next2").addEventListener("click", questionTwo);
     document.querySelector("#next3").addEventListener("click", questionThree);
@@ -17,6 +19,19 @@ function loadQuiz() {
     document.querySelector("#four").classList.add("display_none");
     document.querySelector("#five").classList.add("display_none");
 
+<<<<<<< HEAD
+=======
+    function burgerMenu() {
+    var x = document.querySelector(".menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+>>>>>>> agata
     function questionZero() {
         document.querySelector("#two").classList.add("display_none");
         document.querySelector("#one").classList.remove("display_none");
@@ -90,7 +105,7 @@ function loadQuiz() {
 
         myCopy.querySelector(".number_span").textContent = myQuestion.number;
         myCopy.querySelector("h1").textContent = myQuestion.quiz_title;
-        myCopy.querySelector("p").textContent = myQuestion.blurb;
+        myCopy.querySelector(".blurb").textContent = myQuestion.blurb;
         myCopy.querySelector("#specificQuestion").textContent = myQuestion.question;
 
         if (myQuestion.number < 4) {
@@ -120,6 +135,7 @@ function loadQuiz() {
     }
 }
 
+<<<<<<< HEAD
 var slider = document.querySelector("#myRange");
     var output = document.querySelector("#demo");
     output.innerHTML = slider.value;
@@ -128,3 +144,20 @@ var slider = document.querySelector("#myRange");
     slider.oninput = function() {
         output.innerHTML = this.value;
     }
+=======
+//Slider - currently doesn't change value oninput ???
+
+var slider = document.getElementById("myRange");
+var output = document.querySelector("#demo");
+
+output.innerHTML = slider.value;
+
+document.getElementById("myRange").addEventListener("oninput", changeValue);
+
+function changeValue() {
+    console.log("This.value:" + document.getElementById("myRange").value + "output.innerHTML" + output.innerHTML);
+
+    output.innerHTML = document.getElementById("myRange").value;
+}
+
+>>>>>>> agata

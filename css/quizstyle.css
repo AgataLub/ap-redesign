@@ -1,238 +1,313 @@
 
-#templateID,
-#templateID_slider {
-    position: relative;
-    top: 5vh;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "h1 h1 h1"
-        "p number questions"
-        "image image questions"
-        "image image .";
-}
 
-.quiz {
-    position:relative;
-}
+    /*Media Queries*/
 
-.solution {
-    position: relative;
-    top: 5vh;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: auto;
-    text-align: center;
-    grid-template-areas:
-        ". h1 h1"
-        ". h2 h2"
-        "image left right"
-        "image . learnmore"
-}
+    @media only screen and (max-width: 800px) {
 
+        #templateID,
+        #templateID_slider {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "h1"
+                "questions";
+        }
 
-/*Grid Areas*/
+        h1 {
+            padding-top: 4vh;
+        }
 
-h1 {
-    grid-area: h1;
-}
+        .number,
+        .illustration,
+        .blurb,
+        .image {
+            display: none;
+        }
 
-h2 {
-    grid-area: h2;
-}
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
 
-p {
-    grid-area: p;
-}
+        th,
+        td {
+            border: 1px solid #999;
+            position: relative;
+            float: left;
+            clear: both;
+            width: 100%;
+            text-align: left;
+        }
 
-.questions {
-    grid-area: questions;
-}
+        button {
+            width: 100%;
+        }
 
 
-.image {
-    grid-area: image;
-    padding-right: 1rem;
-}
+        .solution {
+            position: relative;
+            top: 2vh;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            text-align: center;
+            grid-template-areas:
+                "h1"
+                "h2"
+                "left"
+                "right"
+                "learnmore"
+        }
+
+        #left,
+        #right {
+            max-width: 100%;
+        }
+
+    }
+
+    /*Grids*/
+    @media only screen and (min-width: 801px) {
+
+        #templateID,
+        #templateID_slider {
+            position: relative;
+            top: 5vh;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "h1 h1 h1"
+                "p number questions"
+                "image image questions"
+                "image image .";
+        }
+
+        .solution {
+            position: relative;
+            top: 5vh;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: auto;
+            text-align: center;
+            grid-template-areas:
+                ". h1 h1"
+                ". h2 h2"
+                "image left right"
+                "image . learnmore"
+        }
+
+    }
+
+    .quiz {
+        position: relative;
+    }
+
+    /*Grid Areas*/
+
+    h1 {
+        grid-area: h1;
+    }
+
+    h2 {
+        grid-area: h2;
+    }
+
+    p {
+        grid-area: p;
+    }
+
+    .questions {
+        grid-area: questions;
+    }
 
 
-#right {
-    grid-area: right;
-    max-width: 30vw;
-}
-
-#left {
-    grid-area: left;
-    max-width: 30vw;
-}
-
-.learnmore {
-    grid-area: learnmore;
-    padding-top: 4rem;
-    text-align: end;
-}
-
-.plan {
-    background-color: #ECEFF2;
-    border-radius: 17px;
-    padding: 1rem;
-    text-align: center;
-    position:relative;
-    display: flex;
-    flex-flow:column;
-    justify-content: space-between;
-}
-
-.plan > .plans {
-    display: block;
-    list-style-type: circle;
-}
-
-.blue {
-margin:0;
-}
+    .image {
+        grid-area: image;
+        padding-right: 1rem;
+    }
 
 
-.number {
-    grid-area: number;
-    background-color: #40607E;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    vertical-align: middle;
-    justify-self: end;
-    margin-right: 3rem;
-}
+    #right {
+        grid-area: right;
+        margin: 15px;
+    }
 
-.number_span {
-    color: white;
-    font-size: 2rem;
-}
+    #left {
+        grid-area: left;
+        margin: 15px;
+    }
 
-.buttons {
-    position: fixed;
-    bottom: 3vh;
-    right: 3vh;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10;
-}
+    .learnmore {
+        grid-area: learnmore;
+        padding-top: 4rem;
+        text-align: end;
+    }
 
-.back,
-.next {
-    display: inline-block;
-}
+    .plan {
+        background-color: #ECEFF2;
+        border-radius: 17px;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
 
-.display_none {
-    display: none;
-}
+    .plan > .plans {
+        display: block;
+        list-style-type: circle;
+    }
 
-/*LOADING BAR*/
-
-#loading {
-    position: relative;
-    top: 2vh;
-    left: 5vh;
-    padding-bottom: 3vh;
-}
-
-.grey_bar {
-    background-image: url(img/grey.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    height: 15px;
-    width: 80%;
-    position: absolute;
-    top: 25px;
-    left: 10px;
-}
-
-.orange_bar {
-    background-image: url(img/new_orange.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    height: 15px;
-    width: 80%;
-    position: absolute;
-    top: 25px;
-    left: 10px;
-}
-
-/*LOADING BAR TRANSFORM*/
-
-.transform20 {
-    transform: scaleX(0.2);
-    transform-origin: left;
-    transition: 0.3s ease;
-}
-
-.transform40 {
-    transform: scaleX(0.4);
-    transition: 0.3s ease;
-}
-
-.transform60 {
-    transform: scaleX(0.6);
-    transition: 0.3s ease;
-}
-
-.transform80 {
-    transform: scaleX(0.8);
-    transition: 0.3s ease;
-}
+    .blue {
+        margin: 0;
+    }
 
 
-/*Various Styling*/
+    .number {
+        grid-area: number;
+        background-color: #40607E;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        justify-self: end;
+        margin-right: 3rem;
+    }
 
-.secondary-button:focus {
-    background-color: #FF9631;
-    color: white;
-}
+    .number_span {
+        color: white;
+        font-size: 2rem;
+    }
 
-.test {
-    background-color: darkorchid;
-}
+    .buttons {
+        position: fixed;
+        bottom: 3vh;
+        right: 3vh;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+    }
 
-/*Slider*/
+    .back,
+    .next {
+        display: inline-block;
+    }
 
-.slidecontainer {
-    width: 100%;
-}
+    .display_none {
+        display: none;
+    }
 
-.slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 15px;
-    background: #C7D1D9;
-    outline: none;
-    opacity: 1;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 15px;
-}
+    /*LOADING BAR*/
 
-.slider:hover {
-    opacity: 0.8;
-}
+    #loading {
+        position: relative;
+        top: 2vh;
+        left: 5vh;
+        padding-bottom: 3vh;
+    }
 
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #FF9631;
-    border-radius: 50%;
-    cursor: pointer;
-}
+    .grey_bar {
+        background-image: url(img/grey.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        height: 15px;
+        width: 80%;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+
+    .orange_bar {
+        background-image: url(img/new_orange.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        height: 15px;
+        width: 80%;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+
+    /*LOADING BAR TRANSFORM*/
+
+    .transform20 {
+        transform: scaleX(0.2);
+        transform-origin: left;
+        transition: 0.3s ease;
+    }
+
+    .transform40 {
+        transform: scaleX(0.4);
+        transition: 0.3s ease;
+    }
+
+    .transform60 {
+        transform: scaleX(0.6);
+        transition: 0.3s ease;
+    }
+
+    .transform80 {
+        transform: scaleX(0.8);
+        transition: 0.3s ease;
+    }
+
+
+    /*Various Styling*/
+
+    .secondary-button:focus {
+        background-color: #FF9631;
+        color: white;
+    }
+
+    .test {
+        background-color: darkorchid;
+    }
+
+    /*Slider*/
+
+    .slidecontainer {
+        width: 100%;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 15px;
+        background: #C7D1D9;
+        outline: none;
+        opacity: 1;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 15px;
+    }
+
+    .slider:hover {
+        opacity: 0.8;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #FF9631;
+        border-radius: 50%;
+        cursor: pointer;
+    }

@@ -80,6 +80,10 @@
 
 @media only screen and (min-width: 801px) {
 
+    .menu2, #burgerlogo {
+        display:none;
+    }
+
     #topright {
         display: flex;
         justify-content: flex-end;

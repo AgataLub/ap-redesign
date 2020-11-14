@@ -4,114 +4,121 @@
 
 @media only screen and (max-width: 800px) {
 
-    #navlogo, #navlogo2 {
+    #navlogo,
+    #navlogo2 {
         margin-left: 20%;
         margin-right: 20%;
-        display:flex;
+        display: flex;
     }
 
-.menu, .icons, #navlogo {
-  display: none;
-}
+    .menu,
+    .icons,
+    #navlogo,
+    .menu2 {
+        display: none;
+    }
 
-#burgermenu {
-  display: block;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
+    .menu2 {
+        position:relative;
+        top: 5px;
 
-/*    trying things out*/
-  /* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-    background-color:white;
-  position: relative;
-}
+    }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav .menu {
-  display: none;
-}
+    .menu2 > ul {
+        display:block;
+        list-style-type: none;
+        text-align: center;
+        line-height: 1.7rem;
+    }
 
-/* Style navigation menu links */
-#burgerlogo {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+    #burgermenu {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
 
-/* Style the hamburger menu */
-#burgerlogo {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+    /*    trying things out*/
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
 
-/* Add a grey background color on mouse-over */
-#burgerlogo:hover {
-  background-color: #ddd;
-  color: black;
-}
+    /* Style navigation menu links */
+    #burgerlogo {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: white;
-  color: white;
-}
+    /* Style the hamburger menu */
+    #burgerlogo {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
 
-/*    end of trying things out*/
+    /* Add a grey background color on mouse-over */
+    #burgerlogo:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: white;
+        color: white;
+    }
 
+    /*    end of trying things out*/
 }
 
 @media only screen and (min-width: 801px) {
 
     #topright {
-    display: flex;
-justify-content: flex-end;
-}
+        display: flex;
+        justify-content: flex-end;
+    }
 
-nav {
-    padding: 1rem;
-    padding-right: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
+    nav {
+        padding: 1rem;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
 
-nav > ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    align-items: baseline;
-}
+    nav > ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
 
-nav > ul > li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    nav > ul > li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-.menu {
-    flex: 3;
-    align-items: baseline;
-}
+    .menu {
+        flex: 3;
+        align-items: baseline;
+    }
 
-.icons {
-    flex: 1;
-}
+    .icons {
+        flex: 1;
+    }
 
-#navlogo {
-    flex: 1;
+    #navlogo {
+        flex: 1;
+    }
 }
-}
-
-
 
 /*Navigation and Header*/
 
@@ -121,14 +128,14 @@ nav > ul > li {
 
 * {
     box-sizing: border-box;
-  }
+}
 
-  :root {
-    --bg-color:white;
+:root {
+    --bg-color: white;
     --orange-color: #FF9631;
     --darkblue-color: #40607E;
     --light-gray: #C7D1D9;
-    --dark-text:black;
+    --dark-text: black;
 
     --primary-font: 'Aleo', serif;
     --secondary-font: 'Open Sans', sans-serif;
@@ -136,15 +143,16 @@ nav > ul > li {
     --details-color: #007777;
 
     --white-space: 1rem;
-  }
-  html {
+}
+
+html {
     font-size: 100%;
     font-family: var(--primary-font);
     font-weight: 100;
-  }
+}
 
-  /* Button styling*/
-  button {
+/* Button styling*/
+button {
     transition: all 3s;
     padding: 1rem 3rem;
     border-radius: 5rem;
@@ -158,224 +166,230 @@ nav > ul > li {
     cursor: pointer;
     margin: 0 1rem 1rem 0;
     border: none;
-  }
-  .secondary-button {
+}
+
+.secondary-button {
     background: var(--light-gray);
     color: var(--darkblue-color);
     font-family: var(--secondary-font);
     border-radius: 1rem;
-  }
-  button:hover {
-    background-color: var(--orange-color);
-  }
+}
 
-  button:active {
+button:hover {
+    background-color: var(--orange-color);
+}
+
+button:active {
     background-color: var(--darkblue-color);
-  }
-.secondary-button:visited{
+}
+
+.secondary-button:visited {
     background-color: var(--orange-color);
     color: var(--light-gray)
 }
-  .secondary-button:hover {
+
+.secondary-button:hover {
     background-color: var(--darkblue-color);
-    color: var(--bg-color)}
+    color: var(--bg-color)
+}
 
 
 /*Links styling*/
-  a {
+a {
     transition: all 0.2s;
     font-weight: 100;
     text-decoration: underline;
     font-family: var(--primary-font);
     color: var(--darkblue-color);
-  }
+}
 
-  a:hover {
+a:hover {
     color: var(--orange-color);
     font-weight: 100;
-  }
+}
 
-nav > ul > li > a {
+ul > li > a {
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-nav > ul > li > a:hover {
+ul > li > a:hover {
     font-size: 1.4rem;
     transition: 0.3s;
 }
 
-  /*Color swatches*/
-  .swatches li {
+/*Color swatches*/
+.swatches li {
     margin-right: 5vw;
     height: 15vw;
     width: 20%;
     list-style: none;
-  }
+}
 
-  ul li:last-child {
+ul li:last-child {
     margin-right: 0;
-  }
+}
 
-  .color-swatch-1 {
+.color-swatch-1 {
     background-color: var(--light-gray);
-  }
+}
 
-  .color-swatch-2 {
+.color-swatch-2 {
     background-color: var(--orange-color);
-  }
+}
 
-  .color-swatch-3 {
+.color-swatch-3 {
     background-color: var(--darkblue-color);
-  }
+}
 
-  .color-swatch-4 {
+.color-swatch-4 {
     background-color: var(--dark-text);
-  }
+}
 
-  .color-swatch-5 {
+.color-swatch-5 {
     background-color: var(--color-5);
-  }
+}
 
-  .typography-main {
+.typography-main {
     color: var(--details-color);
-  }
+}
 
-  /*Tekst styling*/
- h1 {
+/*Tekst styling*/
+h1 {
     font-size: 2rem;
     font-weight: 100;
     color: var(--darkblue-color);
-  }
+}
 
 h2 {
     font-family: var(--secondary-font);
     font-size: 1.2rem;
     color: var(--darkblue-color);
     font-weight: 100;
-  }
+}
 
-  p, nav > a {
+p,
+nav > a {
     font-family: var(--secondary-font);
     line-height: 1;
     font-size: 1rem;
     color: var(--darkblue-color);
-  }
+}
 
 .plan > ul {
     font-family: var(--primary-font);
     line-height: 2;
     font-size: 1rem;
     color: var(--darkblue-color);
-  }
+}
 
-  strong {
+strong {
     font-weight: 600;
 
-  }
+}
 
-  em {
+em {
     font-style: italic;
-  }
+}
 
 
-  /*Styletile styling*/
+/*Styletile styling*/
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
-  header,
-  main,
-  footer {
+header,
+main,
+footer {
     max-width: 1300px;
     margin: 0 auto;
     padding: calc(2 * var(--white-space));
-  }
+}
 
-  .full-width {
+.full-width {
     background: var(--darkblue-color);
     color: var(--bg-color);
     width: 100%;
-  }
+}
 
-  .header-wrapper h1 {
+.header-wrapper h1 {
     font-size: 3rem;
     text-transform: uppercase;
     padding-right: 0.75em;
     font-weight: bold;
     color: var(--bg-color);
-  }
+}
 
-  .header-wrapper h2 {
+.header-wrapper h2 {
     font-size: 1.6em;
     color: var(--bg-color);
     font-weight: 500;
     text-transform: uppercase;
     margin: var(--white-space) 0;
     color: var(--bg-color);
-  }
+}
 
-  main {
+main {
     padding: calc(2 * var(--white-space));
-  }
+}
 
-  section {
+section {
     margin-bottom: calc(4 * var(--white-space));
-  }
+}
 
-  .section-heading {
+.section-heading {
     font-size: 1.3rem;
-    color:var(--light-gray);
-  }
+    color: var(--light-gray);
+}
 
-  ul {
+ul {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  p[class*="font-details-"] {
+p[class*="font-details-"] {
     margin-top: 0.5rem;
     margin-bottom: calc(2 * var(--white-space));
     font-size: 0.75rem;
     font-family: var(--secondary-font);
     color: #6f6f6f;
-  }
+}
 
-  .adjectives ul {
+.adjectives ul {
     font-size: 1.5rem;
     opacity: 0.5;
-  }
+}
 
-  .adjectives ul {
+.adjectives ul {
     flex-direction: column;
-  }
+}
 
-  footer {
+footer {
     font-style: italic;
     color: var(--bg-color)
-  }
+}
 
-  @media (min-width: 800px) {
+@media (min-width: 800px) {
     main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
     }
 
     .swatches li {
-      margin-right: 3%;
-      height: 10vw;
-      width: 20%;
+        margin-right: 3%;
+        height: 10vw;
+        width: 20%;
     }
 
     .textures li {
-      height: 15vw;
+        height: 15vw;
     }
-  }
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
     .adjectives ul {
-      flex-direction: row;
+        flex-direction: row;
     }
-  }
+}

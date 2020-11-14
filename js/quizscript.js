@@ -3,6 +3,8 @@ window.addEventListener("load", loadQuiz);
 function loadQuiz() {
     console.log("loadQuiz");
 
+    document.querySelector("#burgerlogo").addEventListener("onclick", burgerMenu);
+
     document.querySelector("#next1").addEventListener("click", questionOne);
     document.querySelector("#next2").addEventListener("click", questionTwo);
     document.querySelector("#next3").addEventListener("click", questionThree);
@@ -16,6 +18,16 @@ function loadQuiz() {
     document.querySelector("#three").classList.add("display_none");
     document.querySelector("#four").classList.add("display_none");
     document.querySelector("#five").classList.add("display_none");
+
+    function burgerMenu() {
+    var x = document.querySelector(".menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 
     function questionZero() {
         document.querySelector("#two").classList.add("display_none");

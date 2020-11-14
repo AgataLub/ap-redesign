@@ -17,15 +17,6 @@ function loadQuiz() {
     document.querySelector("#four").classList.add("display_none");
     document.querySelector("#five").classList.add("display_none");
 
-    var slider = document.querySelector("#myRange");
-    var output = document.querySelector("#demo");
-    output.innerHTML = slider.value;
-
-    slider.oninput = function() {
-        console.log("This.value:" + this.value + "output.innerHTML" + output.innerHTML);
-        output.innerHTML = this.value;
-    }
-
     function questionZero() {
         document.querySelector("#two").classList.add("display_none");
         document.querySelector("#one").classList.remove("display_none");
@@ -128,3 +119,12 @@ function loadQuiz() {
         parentElem.appendChild(myCopy);
     }
 }
+
+var slider = document.querySelector("#myRange");
+    var output = document.querySelector("#demo");
+    output.innerHTML = slider.value;
+        console.log("This.value:" + this.value + "output.innerHTML" + output.innerHTML);
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }

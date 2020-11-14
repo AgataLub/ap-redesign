@@ -19,19 +19,6 @@ function loadQuiz() {
     document.querySelector("#four").classList.add("display_none");
     document.querySelector("#five").classList.add("display_none");
 
-<<<<<<< HEAD
-=======
-    function burgerMenu() {
-    var x = document.querySelector(".menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
-
->>>>>>> agata
     function questionZero() {
         document.querySelector("#two").classList.add("display_none");
         document.querySelector("#one").classList.remove("display_none");
@@ -135,16 +122,16 @@ function loadQuiz() {
     }
 }
 
-<<<<<<< HEAD
-var slider = document.querySelector("#myRange");
-    var output = document.querySelector("#demo");
-    output.innerHTML = slider.value;
-        console.log("This.value:" + this.value + "output.innerHTML" + output.innerHTML);
-
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-=======
+//<<<<<<< HEAD
+//var slider = document.querySelector("#myRange");
+//    var output = document.querySelector("#demo");
+//    output.innerHTML = slider.value;
+//        console.log("This.value:" + this.value + "output.innerHTML" + output.innerHTML);
+//
+//    slider.oninput = function() {
+//        output.innerHTML = this.value;
+//    }
+//=======
 //Slider - currently doesn't change value oninput ???
 
 var slider = document.getElementById("myRange");
@@ -159,5 +146,3 @@ function changeValue() {
 
     output.innerHTML = document.getElementById("myRange").value;
 }
-
->>>>>>> agata

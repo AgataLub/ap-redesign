@@ -324,6 +324,10 @@ footer {
     padding-left: 10rem;
 }
 
+.main-image {
+    background-size: cover;
+}
+
 @media (min-width: 800px) {
     main {
         display: grid;

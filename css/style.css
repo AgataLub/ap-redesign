@@ -2,14 +2,11 @@
 
 /*navigation media query*/
 
-<<<<<<< HEAD
 @media only screen and (max-width: 800px) {
-=======
-#topright {
-    display: flex;
-    justify-content: flex-end;
-}
->>>>>>> julita
+    #topright {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     #navlogo,
     #navlogo2 {
@@ -26,13 +23,13 @@
     }
 
     .menu2 {
-        position:relative;
+        position: relative;
         top: 5px;
 
     }
 
     .menu2 > ul {
-        display:block;
+        display: block;
         list-style-type: none;
         text-align: center;
         line-height: 1.7rem;
@@ -87,8 +84,9 @@
 
 @media only screen and (min-width: 801px) {
 
-    .menu2, #burgerlogo {
-        display:none;
+    .menu2,
+    #burgerlogo {
+        display: none;
     }
 
     #topright {
@@ -186,13 +184,10 @@ button {
     border-radius: 1rem;
 }
 
-<<<<<<< HEAD
-=======
 .third-button {
     background: var(--light-gray);
 }
 
->>>>>>> julita
 button:hover {
     background-color: var(--orange-color);
 }
@@ -285,10 +280,6 @@ h2 {
     color: var(--darkblue-color);
     font-weight: 100;
 }
-<<<<<<< HEAD
-
-=======
-
 
 h4 {
     color: var(--orange-color);
@@ -306,8 +297,6 @@ h5 {
 }
 
 
->>>>>>> julita
-p,
 nav > a {
     font-family: var(--secondary-font);
     line-height: 1;
@@ -408,9 +397,6 @@ footer {
     font-style: italic;
     color: var(--bg-color)
 }
-<<<<<<< HEAD
-
-=======
 
 .welcome-text {
     padding-top: 8rem;
@@ -433,7 +419,7 @@ footer {
 }
 
 .main-image {
-    background-image:url(img/main-page.svg);
+    background-image: url(img/main-page.svg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -448,7 +434,6 @@ footer {
     position: relative;
 }
 
->>>>>>> julita
 @media (min-width: 800px) {
     main {
         display: grid;
@@ -465,14 +450,10 @@ footer {
     .textures li {
         height: 15vw;
     }
-<<<<<<< HEAD
 }
-
-=======
 
 }
 
->>>>>>> julita
 @media (min-width: 900px) {
     .adjectives ul {
         flex-direction: row;

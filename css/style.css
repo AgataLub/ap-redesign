@@ -2,7 +2,14 @@
 
 /*navigation media query*/
 
+<<<<<<< HEAD
 @media only screen and (max-width: 800px) {
+=======
+#topright {
+    display: flex;
+    justify-content: flex-end;
+}
+>>>>>>> julita
 
     #navlogo,
     #navlogo2 {
@@ -179,6 +186,13 @@ button {
     border-radius: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+.third-button {
+    background: var(--light-gray);
+}
+
+>>>>>>> julita
 button:hover {
     background-color: var(--orange-color);
 }
@@ -271,7 +285,28 @@ h2 {
     color: var(--darkblue-color);
     font-weight: 100;
 }
+<<<<<<< HEAD
 
+=======
+
+
+h4 {
+    color: var(--orange-color);
+    font-size: 3em;
+    font-weight: 400;
+    margin: 10px
+}
+
+
+h5 {
+    color: var(--dark-text);
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+
+>>>>>>> julita
 p,
 nav > a {
     font-family: var(--secondary-font);
@@ -373,7 +408,47 @@ footer {
     font-style: italic;
     color: var(--bg-color)
 }
+<<<<<<< HEAD
 
+=======
+
+.welcome-text {
+    padding-top: 8rem;
+    padding-left: 4rem;
+    position: absolute;
+    bottom: 26vw;
+}
+
+.welcome-p {
+    width: 40vw;
+    padding-left: 4rem;
+    position: absolute;
+    bottom: 18vw;
+}
+
+.welcome-buttons {
+    padding-left: 10rem;
+    bottom: 10vw;
+    position: absolute;
+}
+
+.main-image {
+    background-image:url(img/main-page.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    left: 29vw;
+    top: 9vw;
+
+}
+
+.container {
+    position: relative;
+}
+
+>>>>>>> julita
 @media (min-width: 800px) {
     main {
         display: grid;
@@ -390,8 +465,14 @@ footer {
     .textures li {
         height: 15vw;
     }
+<<<<<<< HEAD
 }
 
+=======
+
+}
+
+>>>>>>> julita
 @media (min-width: 900px) {
     .adjectives ul {
         flex-direction: row;

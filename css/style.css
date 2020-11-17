@@ -479,6 +479,7 @@ footer {
   float: left;
     text-align: center;
     color: var(--dark-blue);
+
 }
 
 .textbox input {
@@ -490,6 +491,7 @@ footer {
     width: 80%;
     float: left;
     margin: 0 10px;
+    font: 100 0.8em/1 var(--secondary-font);
 
 }
 

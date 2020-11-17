@@ -332,13 +332,6 @@ footer {
     display: inline-block;
 }
 
-@media all and (max-width:30em){
- welcome.buttons{
-  display:block;
-  margin:0.4em auto;
- }
-}
-
 .main-image {
     background-image: url(img/main-page.svg);
     background-size: 100%;

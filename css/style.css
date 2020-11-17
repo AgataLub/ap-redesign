@@ -329,19 +329,23 @@ footer {
 .welcome-buttons {
     padding-left: 10rem;
     bottom: 10vw;
-    position: absolute;
+    display: inline-block;
+}
+
+@media all and (max-width:30em){
+ welcome.buttons{
+  display:block;
+  margin:0.4em auto;
+ }
 }
 
 .main-image {
     background-image: url(img/main-page.svg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    position: relative;
-    width: 70vw;
-    height: 70vh;
-    left: 29vw;
-    top: 9vw;
-
+    width: 80%;
+    height: 800px;
+    float: right;
 }
 
 .container {
@@ -386,7 +390,7 @@ footer {
 
 .textbox i {
     width: 46px;
-  float: left;
+    float: left;
     text-align: center;
     color: var(--dark-blue);
 }

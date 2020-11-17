@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+<<<<<<< HEAD
 /*navigation media query*/
+=======
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+/*Navigation and Header*/
+>>>>>>> julita
 
 @media only screen and (max-width: 800px) {
     #topright {
@@ -432,6 +438,79 @@ footer {
 
 .container {
     position: relative;
+}
+
+.login-box {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--darkblue-color);
+}
+
+.login-box h1 {
+    float: left;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.login-box h6 {
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font: 100 1.1em/1 var(--primary-font);
+    padding: 0.2rem;
+    text-decoration-line: underline;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+
+}
+
+.textbox i {
+    width: 46px;
+  float: left;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--darkblue-color);
+    font-size: 1.6rem;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.btn {
+    width: 55%;
+    background-color: var(--darkblue-color);
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    padding: 1rem 0rem;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    font: 100 1.5em/1 var(--primary-font);
+    float: right;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--orange-color);
 }
 
 @media (min-width: 800px) {

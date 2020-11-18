@@ -46,44 +46,50 @@
         top: 5px;
     }
 
-    /*    trying things out*/
-    /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        background-color: white;
-        position: relative;
+    .container {
+        display: flex;
+        flex-flow: column;
     }
+}
 
-    /* Style navigation menu links */
-    #burgerlogo {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
+/*    trying things out*/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
 
-    /* Style the hamburger menu */
-    #burgerlogo {
-        display: block;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-    }
+/* Style navigation menu links */
+#burgerlogo {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
 
-    /* Add a grey background color on mouse-over */
-    #burgerlogo:hover {
-        background-color: #ddd;
-        color: black;
-    }
+/* Style the hamburger menu */
+#burgerlogo {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
 
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: white;
-        color: white;
-    }
+/* Add a grey background color on mouse-over */
+#burgerlogo:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-    /*    end of trying things out*/
+/* Style the active link (or home/logo) */
+.active {
+    background-color: white;
+    color: white;
+}
+
+/*    end of trying things out*/
 }
 
 @media only screen and (min-width: 801px) {
@@ -130,6 +136,22 @@
 
     #navlogo {
         flex: 1;
+    }
+
+    .container {
+        position: relative;
+        display: grid;
+        top: 5vh;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title main-image"
+            "paragraph main-image"
+            "buttons main-image";
     }
 }
 
@@ -404,41 +426,21 @@ footer {
 
 .welcome-text {
     padding-left: 4rem;
-    position: absolute;
-    grid-area:title;
+    grid-area: title;
 }
 
 .welcome-p {
-    position: absolute;
     grid-area: paragraph;
-
     padding-left: 4rem;
 }
 
 .welcome-buttons {
     padding-left: 4rem;
-    display: inline-block;
     grid-area: buttons;
 }
 
 .main-image {
     grid-area: main-image;
-}
-
-.container {
-    position: relative;
-    display: grid;
-    top: 5vh;
-            width: 100%;
-            height: auto;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 0.5fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "title main-image"
-                "paragraph main-image"
-                "buttons main-image";
 }
 
 .login-box {

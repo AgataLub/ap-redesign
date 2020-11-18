@@ -8,21 +8,39 @@
 </head>
 
 <body>
-    <nav>
+   <nav>
         <ul class="menu">
             <li><a href="">Pension</a></li>
-            <li><a href="profile.html">Members</a></li>
+            <li><a href="">Members</a></li>
             <li><a href="">About AP</a></li>
         </ul>
 
-       <ul class="icons">
+        <ul class="icons">
             <li><img src="css/img/search_icon.svg"></li>
-            <li><a href="profile.html"><img src="css/img/mail_icon.svg"></a></li>
-            <li><a href="profile.html"><img src="css/img/user_icon.svg"></a></li>
+            <li><img src="css/img/mail_icon.svg"></li>
+            <li><img src="css/img/user_icon.svg"></li>
         </ul>
 
         <img id="navlogo" src="css/img/logo.svg">
+
+        <!--        trying things out-->
+        <div class="topnav">
+            <a href="#home" class="active"><img id="navlogo2" src="css/img/logo.svg"></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <img id="burgerlogo" src="css/img/user_icon.svg" onclick="burgerMenu()">
+             <!-- Navigation links (hidden by default) -->
+            <div class="menu2">
+            <ul>
+                <li><a href="">Pension</a></li>
+                <li><a href="">Members</a></li>
+                <li><a href="">About AP</a></li>
+            </ul>
+                </div>
+        </div>
+        <!--        end of trying things out-->
+
     </nav>
+
 
     <div class="login-box">
         <h1>Welcome back</h1>
@@ -37,6 +55,6 @@
         <h6><a href="">I forgot my password</a></h6>
         <a href="quiz.html"><input type="button" class="btn" value="Login"></a>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body></html>

@@ -403,36 +403,42 @@ footer {
 }
 
 .welcome-text {
-    padding-top: 8rem;
     padding-left: 4rem;
     position: absolute;
-    bottom: 26vw;
+    grid-area:title;
 }
 
 .welcome-p {
-    width: 40vw;
-    padding-left: 4rem;
     position: absolute;
-    bottom: 18vw;
+    grid-area: paragraph;
+
+    padding-left: 4rem;
 }
 
 .welcome-buttons {
-    padding-left: 10rem;
-    bottom: 10vw;
+    padding-left: 4rem;
     display: inline-block;
+    grid-area: buttons;
 }
 
 .main-image {
-    background-image: url(img/main-page.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 800px;
-    float: right;
+    grid-area: main-image;
 }
 
 .container {
     position: relative;
+    display: grid;
+    top: 5vh;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "title main-image"
+                "paragraph main-image"
+                "buttons main-image";
 }
 
 .login-box {

@@ -1,9 +1,287 @@
 <!DOCTYPE html>
 <html lang=en>
-    <head>
-        <title>Akademiker Pension: Profile</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <title>Akademiker Pension: Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href="css/styletilejulia.css">
+    <link rel='stylesheet' href="css/style_profilejulia.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="articles.html?category=pension">Pension</a></li>
+            <li><a href="articles.html?category=members">Members</a></li>
+            <li><a  href="articles.html?category=about_ap">About AP</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li><img src="css/img/search_icon.svg"></li>
+            <li><a href="profile.html"><img src="css/img/mail_icon.svg"></a></li>
+            <li><a href="profile.html"><img src="css/img/user_icon.svg"></a></li>
+        </ul>
+
+        <img id="navlogo" src="css/img/logo.svg">
+
+        <!--        trying things out-->
+        <div class="topnav">
+            <a href="#home" class="active"><img id="navlogo2" src="css/img/logo.svg"></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <img id="burgerlogo" src="css/img/user_icon.svg" onclick="burgerMenu()">
+             <!-- Navigation links (hidden by default) -->
+            <div class="menu2">
+            <ul>
+                <li><a href="articles.html?category=pension">Pension</a></li>
+            <li><a href="articles.html?category=members">Members</a></li>
+            <li><a  href="articles.html?category=about_ap">About AP</a></li>
+            </ul>
+                </div>
+        </div>
+        <!--        end of trying things out-->
+
+    </nav>
+    <main>
+        <section id="burger_menu_side_navigation">
+            <div></div>
+            <div></div>
+        </section>
+        <section id="side_navigation" class="hidenavi">
+            <h1>Hello,<br>Susanna Peters</h1>
+            <ol class="sections">
+                <li class="section active pensinsu">
+                    <div class="icon" id="pensions&insurance"><img class="moneymenu" src="icons/money-white.svg"></div>
+                    <h1>Pensions & Insurance</h1>
+                </li>
+                <li class="section msg">
+                    <div class="icon" id="messages"><img class="mailmenu" src="icons/mail.svg" alt="icon of an open envelope"></div>
+                    <h1>Messages</h1>
+                </li>
+                <li class="section plan">
+                    <div class="icon" id="profile&plan"><img class="planmenu" src="icons/profile.svg" alt="icon of a person outline"></div>
+                    <h1>Profile & Plan</h1>
+                </li>
+                <li class="section"><a href="quiz.html">
+                    <div class="icon"><img src="icons/change.svg"></div>
+                    <h1>Change Plan</h1></a>
+                </li>
+            </ol>
+            <div class="log_out">
+                <div class="icon"><img src="icons/logout.svg"></div>
+                <h1>Log Out</h1>
+            </div>
+        </section>
+        <section id="content">
+            <article id="profile" class="">
+                <div class="pension">
+                    <h1>Pension</h1>
+                    <ol class="smal_navi">
+                        <li class="expectedpay active">Expected payout</li>
+                        <li class="savingfig">Saving figure</li>
+                        <li class="currentdep">Current deposit</li>
+                        <li class="marketint">Market interest</li>
+                    </ol>
+                    <div class="pension_data payout ">
+                        <img src="img/pensions_data.png" alt="infographic with insides about pension plan" loading=lazy>
+                    </div>
+                    <div class="pension_data figure hide">
+                        <ul>
+                            <li>
+                                <p>If you retire, when you are</p><strong class="picker">68 years</strong>
+                            </li>
+                            <li>
+                                <p>In the first 10 years monthly payment</p><strong>29.840 kr.</strong>
+                            </li>
+                            <li>
+                                <p>For the rest of your life monthly payment</p><strong>28.590 kr.</strong>
+                            </li>
+                        </ul>
+                        <p class="learn_more">Go to pension overview</p>
+                    </div>
+                    <div class="pension_data deposit hide">
+                        <div class="deposit_cont">
+                            <p>Desposit until October 2020</p>
+                            <h1>28.590 kr.</h1>
+                        </div>
+                        <p class="learn_more">Go to account overview</p>
+                    </div>
+                    <div class="pension_data market hide">
+                        <div class="deposit_cont">
+                            <p>Return per 23 October 2020 - Expresses the return scar to date and not the final roll-up,
+                                which is published once a month</p>
+                            <strong>3,5%</strong>
+                        </div>
+                        <p class="learn_more">Read more</p>
+                    </div>
+                </div>
+                <div class="insurance">
+                    <h1>Insurance</h1>
+                    <ol class="smal_navi">
+                        <li class="active naviyou">For you</li>
+                        <li class="navichildren">For your children</li>
+                        <li class="navispouse">For your spouse</li>
+                        <li class="navibenefi">For your beneficiares</li>
+                    </ol>
+                    <div class="insurance_data you">
+                        <ul>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/wheelchair.svg" alt="icon of person sitting on a wheelchair"></div>
+                                <h1>38.383 kr.</h1>
+                                <p>If you lose your ability to work </p>
+                            </li>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/wheelchair.svg" alt="icon of a person sitting on a wheelchair"></div>
+                                <h1>400.000 kr.</h1>
+                                <p>One off payment in the event of permanent incapacity for work</p>
+                            </li>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/ambulance.svg" alt="icon of an ambulace"></div>
+                                <h1>100.000 kr.</h1>
+                                <p>One off payment for critical illness</p>
+                            </li>
+                        </ul>
+                        <div class="button">Go to insurance</div>
+                    </div>
+                    <div class="insurance_data children hide">
+                        <ul>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/wheelchair.svg" alt="icon of a person sitting on a wheelchair"></div>
+                                <h1>38.383 kr.</h1>
+                                <p>If you lose your ability to work </p>
+                            </li>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/grave.svg" alt="icon of a grave"></div>
+                                <h1>400.000 kr.</h1>
+                                <p>If you die</p>
+                            </li>
+                        </ul>
+                        <div class="button">Go to insurance</div>
+                    </div>
+                    <div class="insurance_data spouse hide">
+                        <ul>
+                            <li>
+                                <div class="insurance_icon"><img src="icons/grave.svg" alt="icon of a grave"></div>
+                                <h1>38.383 kr.</h1>
+                                <p>If you die</p>
+                            </li>
+                        </ul>
+                        <div class="button">Go to insurance</div>
+                    </div>
+                    <div class="insurance_data beneficiares hide">
+                        <ul>
+                            <li>
+                                <div class="insurance_icon">
+                                    <img src="icons/grave.svg" alt="icon of a grave"></div>
+                                <h1>38.383 kr.</h1>
+                                <p>If you die</p>
+                            </li>
+                        </ul>
+                        <div class="button">Go to insurance</div>
+                    </div>
+
+                </div>
+            </article>
+            <article id="messanger" class="hidden">
+                <div class="inbox">
+                    <div class="messages_header">
+                        <h1>Inbox(4)</h1>
+                        <div class="icon"><img src="icons/search.svg" alt='search icon'></div>
+                    </div>
+                    <ol>
+                        <li>
+                            <h1>Akademiker Pension</h1>
+                            <p>Your plan can be changed so…</p>
+                            <h2>today</h2>
+                        </li>
+                        <li class="active">
+                            <h1>Akademiker Pension</h1>
+                            <p>How is your pension looking?</p>
+                            <h2>Mo 03-11</h2>
+                        </li>
+                        <li>
+                            <h1 class="read">Akademiker Pension</h1>
+                            <p>Recent changes</p>
+                            <h2>Sa 31-10</h2>
+                        </li>
+                        <li>
+                            <h1 class="read">Akademiker Pension</h1>
+                            <p>Are you saving enough?</p>
+                            <h2>Sa 31-10</h2>
+                        </li>
+                        <li>
+                            <h1 class="read">Akademiker Pension</h1>
+                            <p>Are you saving enough?</p>
+                            <h2>Sa 31-10</h2>
+                        </li>
+                        <li>
+                            <h1 class="read">Akademiker Pension</h1>
+                            <p>Let us know any big changes in…</p>
+                            <h2>Sa 31-10</h2>
+                        </li>
+                    </ol>
+                    <div class="button">New message</div>
+                </div>
+                <div class="email">
+                    <h2>Akademiker Pension</h2>
+                    <h1>How is your pension looking?</h1>
+                    <h3>Wednesday 04-11-2020</h3>
+                    <p>It’s a good idea to save up so you can get a pension equal to 65-80 percent of what you earn in
+                        your job today. A pension of that size usually means that you do not have to change your habits
+                        to make the money last. Our recommendation is based on the fact that your expenses for, among
+                        other things, the unemployment insurance fund and trade union, your labor market contribution,
+                        your own contribution to pension and ATP and perhaps expenses for transport disappear when you
+                        go from employee to pensioner.
+                        <br><br>Let us know if you want to make any changes, or go to <a>change your plan</a> in the
+                        left menu.
+                        <br><br><br>
+                        Kind regards,
+                        <br>Akademiker Pension</p>
+                    <div class="button">Reply</div>
+                </div>
+            </article>
+            <article id="profileplan" class="hidden">
+                <div class="profilesettings">
+                    <div class="profile_header">
+                        <h1>Your Profile</h1>
+                        <div class="icon"><img src='icons/edit.svg' alt='edit icon'></div>
+                    </div>
+                    <div class="profile_photo"><img src="img/edward-cisneros-_H6wpor9mjs-unsplash.png" alt="profile photo of a woman smiling"></div>
+                    <ol>
+                        <li>
+                            <div class="icon"><img src="icons/mail.svg" alt="icon of an open envelope"></div>
+                            <p>susanna_peters@gmail.com</p>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="icons/home.svg" alt="icon of a house"></div>
+                            <p>Norrebrogade 44 2 tv, 2400 Copenhagen</p>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="icons/phone.svg" alt="icon of a phone"></div>
+                            <p>+4550248149</p>
+                        </li>
+                    </ol>
+                    <div class="button">Change Password</div>
+                </div>
+                <div class="plansettings">
+                    <h1>Your Plan</h1>
+                    <h2>Your current plan:</h2>
+                    <h1 class="special_header">Lifetime pension</h1>
+                    <p>With a lifelong pension , the money never runs out, as you are guaranteed an ongoing payment for the rest of your life no matter how long you live. Lifelong pension is your primary product and accounts for 2/3 of your savings. Lifelong pension will be paid to you from the day you retire until you die.</p>
+                    <p class="learn_more">Check if my plan is the best one for me </p>
+                    <p class="learn_more">Change plan</p>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <script src="javascript/profile.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Akademiker Pension: Articles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href="css/styletilejulia.css">
+    <link rel='stylesheet' href="css/style_articlesjulia.css">
+</head>
+<body id="singlepage">
+    <nav>
+        <ul class="menu">
+            <li><a href="articles.html?category=pension">Pension</a></li>
+            <li><a href="articles.html?category=members">Members</a></li>
+            <li><a  href="articles.html?category=about_ap">About AP</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li><img src="css/img/search_icon.svg"></li>
+            <li><a href="profile.html"><img src="css/img/mail_icon.svg"></a></li>
+            <li><a href="profile.html"><img src="css/img/user_icon.svg"></a></li>
+        </ul>
+
+        <img id="navlogo" src="css/img/logo.svg">
+
+        <!--        trying things out-->
+        <div class="topnav">
+            <a href="#home" class="active"><img id="navlogo2" src="css/img/logo.svg"></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <img id="burgerlogo" src="css/img/user_icon.svg" onclick="burgerMenu()">
+             <!-- Navigation links (hidden by default) -->
+            <div class="menu2">
+            <ul>
+                <li><a href="articles.html?category=pension">Pension</a></li>
+            <li><a href="articles.html?category=members">Members</a></li>
+            <li><a  href="articles.html?category=about_ap">About AP</a></li>
+            </ul>
+                </div>
+        </div>
+        <!--        end of trying things out-->
+
+    </nav>
+
+
+    <article class="main_article"><a>
+        <div class="photo"><img></div>
+        <div class="main_title">
+            <h1>How does it work?</h1>
+            <h2>See what AP does</h2>
+        </div>
+    </a>
+    </article>
+    <article class="articles">
+        <h1>About AP</h1>
+        <section class="all_articles">
+
+            <template id="articletemplate">
+                <a class="articlelink">
+                <div class="articlediv">
+                    <div class="title_small">
+                        <h1>Life changes</h1>
+                        <h2>Has your life changed?</h2>
+                    </div>
+                    <img class="articleimage">
+                </div>
+            </a>
+            </template>
+            
+
+        </section>
+    </article>
+    <script src="javascript/articles.js"></script>
+</body>
+</html>

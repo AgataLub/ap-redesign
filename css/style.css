@@ -3,14 +3,7 @@
 /*navigation media query*/
 
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
-
-/*Navigation and Header*/
-
 @media only screen and (max-width: 800px) {
-    #topright {
-        display: flex;
-        justify-content: flex-end;
-    }
 
     #navlogo,
     #navlogo2 {
@@ -27,13 +20,13 @@
     }
 
     .menu2 {
-        position: relative;
+        position:relative;
         top: 5px;
 
     }
 
     .menu2 > ul {
-        display: block;
+        display:block;
         list-style-type: none;
         text-align: center;
         line-height: 1.7rem;
@@ -46,57 +39,71 @@
         top: 5px;
     }
 
+    /*    trying things out*/
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    /* Style navigation menu links */
+    #burgerlogo {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    #burgerlogo {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    /* Add a grey background color on mouse-over */
+    #burgerlogo:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: white;
+        color: white;
+    }
+
+    /*    end of trying things out*/
+
     .container {
         display: flex;
         flex-flow: column;
+        padding-top: 5vh;
     }
-}
-
-/*    trying things out*/
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: white;
-    position: relative;
-}
-
-/* Style navigation menu links */
-#burgerlogo {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-/* Style the hamburger menu */
-#burgerlogo {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-}
-
-/* Add a grey background color on mouse-over */
-#burgerlogo:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-    background-color: white;
-    color: white;
-}
-
-/*    end of trying things out*/
 }
 
 @media only screen and (min-width: 801px) {
 
-    .menu2,
-    #burgerlogo {
-        display: none;
+    .container {
+        position:relative;
+        display:grid;
+        top: 5vh;
+        width:100%;
+            height: auto;
+        margin: auto;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: auto;
+ grid-template-areas:
+            "title main-image"
+            "paragraph main-image"
+            "buttons main-image";
+    }
+
+    .menu2, #burgerlogo {
+        display:none;
     }
 
     #topright {
@@ -136,22 +143,6 @@
 
     #navlogo {
         flex: 1;
-    }
-
-    .container {
-        position: relative;
-        display: grid;
-        top: 5vh;
-        width: 100%;
-        height: auto;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "title main-image"
-            "paragraph main-image"
-            "buttons main-image";
     }
 }
 
@@ -431,6 +422,7 @@ footer {
 
 .welcome-p {
     grid-area: paragraph;
+
     padding-left: 4rem;
 }
 

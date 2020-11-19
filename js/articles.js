@@ -10,7 +10,7 @@ function getData() {
     console.log("URLSearchParams " + window.location);
     const articles_category = urlParams.get('category');
     console.log(articles_category);
-    fetch("http://agataswistak.com/wordpress/wp-json/wp/v2/ap_content?per_page=100")
+    fetch("https://agataswistak.com/wordpress/wp-json/wp/v2/ap_content?per_page=100")
         .then(response => response.json())
         .then(showPosts);
 }
@@ -28,21 +28,21 @@ if (articles_showcategory === 'pension') {
     document.querySelector('.articles > h1').textContent = 'Pensions';
     document.querySelector('.main_title > h1').textContent = 'Dialogue meetings';
     document.querySelector('.main_title > h2').textContent = 'See our scheduled dialogue meetings';
-    document.querySelector('.photo > img').src = "http://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
+    document.querySelector('.photo > img').src = "https://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
     document.querySelector('.main_article> a').href = 'https://akademikerpension.dk/medlemsejet/arrangementer/dialogmoder/';
 } else if (articles_showcategory === 'members') {
     articles_showcategory = 37;
     document.querySelector('.articles > h1').textContent = 'Members';
     document.querySelector('.main_title > h1').textContent = 'Costs and fees';
     document.querySelector('.main_title > h2').textContent = 'Overview 2020';
-    document.querySelector('.photo > img').src = "http://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
+    document.querySelector('.photo > img').src = "https://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
     document.querySelector('.main_article> a').href = 'https://akademikerpension.dk/om-akademikerpension/omkostninger-og-gebyrer/';
 } else {
     articles_showcategory = 38;
     document.querySelector('.articles > h1').textContent = 'About AP';
     document.querySelector('.main_title > h1').textContent = 'Personal advice';
     document.querySelector('.main_title > h2').textContent = 'Book video advice';
-    document.querySelector('.photo > img').src = "http://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
+    document.querySelector('.photo > img').src = "https://agataswistak.com/wordpress/wp-content/uploads/2020/11/how-does-this-work.png";
     document.querySelector('.main_article> a').href = 'https://akademikerpension.dk/pension/radgivning/personlig-radgivning/';
 }
 
